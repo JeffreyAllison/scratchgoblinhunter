@@ -90,4 +90,7 @@ footer {
     box-shadow: var(--shadow);
 }
 
-
+#player-img {
+  height: 200px;
+  width: 250px;
+}
