@@ -14,38 +14,33 @@
 
 <body>
   <main>
-    <section class="main-section">
-
-      <form>
-        <label>
-          <input type="text" />
-        </label>
-        <button>Battle Goblin</button>
-      </form>
-
-      <div class="goblins-list">
-
+    <div id="player-stats">
+      <div>
+        <p>You defeated <span id="defeated-goblins">0</span> goblins</p>
       </div>
-
-      <div class="goblins-defeated">
-        You've defeated 0 goblins.
-      </div>
-
-      <div class="player-stats">
-        Player HP: 10
-
-      </div>
-      <div class="player">
+      <div id="player">
+        <p>
+          Player HP:
+          <span id="player-hp">10</span>
+        </p>
         <img id="player-img" src="./assets/player.jpeg" />
       </div>
-    </section>
-  </main>
-  <footer>
-    <div class=" copy gutter-right">&copy; 2021 Alchemy Code Lab
     </div>
-  </footer>
+    <div>
+      <div>
+        <form>
+          <input id="goblin-name-input" />
+          <button id="add-goblin-button"> Battle Goblin</button>
+        </form>
+        <div id="goblins-list"></div>
+      </div>
+    </div>
+    <footer>
+      <div id=" copy gutter-right">&copy; 2021 Alchemy Code Lab
+      </div>
+    </footer>
 
-  <script type="module" src="./app.js"></script>
+    <script type="module" src="./app.js"></script>
 </body>
 
 </html>
