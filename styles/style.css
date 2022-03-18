@@ -2,11 +2,11 @@
 body {
     /* feel free to update these css variables for a quick theme */
     
-    --color1: white;
-    --color2: white;
+    --color1: rgb(123, 202, 156);
+    --color2: rgb(224, 175, 142);
     --color3: white;
     --color4: white;
-    --color5: white;
+    --color5: rgb(6, 25, 39);
     
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
         
@@ -36,6 +36,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--color5);
     margin-bottom: calc(var(--footer-height));
 }
 
@@ -88,4 +89,21 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+#player-img {
+  height: 200px;
+  width: 250px;
+  flex-direction: center;
+}
+
+#player-stats {
+  background-color: var(--color1);
+}
+#goblins-list {
+  background-color: var(--color2);
+}
+
+#player-hp{
+  justify-content: center;
 }
