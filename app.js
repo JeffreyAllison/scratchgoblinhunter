@@ -26,7 +26,7 @@ goblinFormEl.addEventListener('submit', (event) => {
   event.preventDefault();
   const newGoblin = {
     name: goblinNameInputEl.value || 'grunt goblin',
-    hp: Math.ceil(Math.random() * 3),
+    hp: 3,
   };
   goblins.unshift(newGoblin);
   goblinNameInputEl.value = '';
@@ -46,7 +46,7 @@ function displayGoblins() {
 
         if (playerHealth <= 0) {
           playerImgEl.classList.add('game-over');
-          alert('YOU DIED');
+          alert('Beaten by goblins,refresh to restart');
           return;
         }
         if (Math.random() > .5) {
@@ -68,7 +68,7 @@ function displayGoblins() {
         }
         if (playerHealth <= 0) {
           playerImgEl.classList.add('game-over');
-          alert('YOU DIED');
+          alert('Beaten by goblins, refresh to restart');
         } displayGoblins();
       });
     }
